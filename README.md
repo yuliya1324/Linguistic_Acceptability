@@ -10,12 +10,12 @@
 
 ## Методы
 
-Для ответа на поставленный вопрос мы использовали разные методы пробинга как для энкодерных, так и для декодерных моделей: анализ attention и zero-shot learning.
+Для ответа на поставленный вопрос мы использовали разные методы пробинга как для энкодерных, так и для декодерных моделей: анализ attention и zero-shot classification.
 
 ### Анализ attention
 
 Брались пары предложений с минимальными различиями, и анализировалась та часть, которая различается. [Подготовленный датасет](https://github.com/yuliya1324/Linguistic_Acceptability/blob/main/cola.csv) и [код](https://github.com/yuliya1324/Linguistic_Acceptability/blob/main/dataset_preparation.ipynb) для предобработки.
 
-### Zero-shot learning
+### Zero-shot classification
 
 Оценивались модели обученные на NLI или multi-tasking, где NLI тоже присутствовал. Для этого задача приемлемости формулировалась как NLI. Также оценивались генеративные модели с передачей примера в промпт и без. [Тетрадка](https://github.com/yuliya1324/Linguistic_Acceptability/blob/main/zero-shot.ipynb) с экспериментами и выводами.
